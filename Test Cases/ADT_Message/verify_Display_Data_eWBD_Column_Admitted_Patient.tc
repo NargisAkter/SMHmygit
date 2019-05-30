@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_Display_Data_eWBD_Column_Admitted_Patient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc612c55-e819-432a-b917-98cad29356d4</testCaseGuid>
+</TestCaseEntity>

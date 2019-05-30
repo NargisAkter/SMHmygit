@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test cases will verify the patient demographic information displaying in the patient detailed view correctly</description>
+   <name>verify_Patient_Info_Deatils_View_Admitted_Patient</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5bc1da1b-22a8-44c1-9b5a-8d905c3e8f83</testCaseGuid>
+</TestCaseEntity>
