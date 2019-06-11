@@ -17,11 +17,14 @@ import ca.thoughtwire.acceptance.mllp.api.MllpCommandSender;
 import ca.thoughtwire.acceptance.mllp.api.MllpDriver;
 import ca.thoughtwire.acceptance.mllp.impl.MllpDriverImpl;
 MllpDriver driver =new MllpDriverImpl();
-MllpCommandSender sender = driver.getNewSender("cs1-19.ott.twamb.ca", "14000", "C:\\Users\\Titu\\Downloads\\SampleData_Day1.xls");
+MllpCommandSender sender = driver.getNewSender("as-19.ott.twamb.ca", "14000", '/Users/nargis.akter/Downloads/SampleData_Day1.xls');
 
-def mrnlist=["4003205","4002259"]
+/*def mrnlist=["4003205","4002259"]
 for(def mrn:mrnlist)
 {
 Command cancelCommand = sender.cancelAdmit(mrn)
 cancelCommand.execute();
-}
+}*/
+
+Command cancelCommand = sender.cancelAdmit("4004648")
+cancelCommand.execute();

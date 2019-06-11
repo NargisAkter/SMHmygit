@@ -18,7 +18,7 @@ import ca.thoughtwire.acceptance.mllp.api.MllpCommandSender;
 import ca.thoughtwire.acceptance.mllp.api.MllpDriver;
 import ca.thoughtwire.acceptance.mllp.impl.MllpDriverImpl;
 MllpDriver driver =new MllpDriverImpl();
-MllpCommandSender sender = driver.getNewSender("cs1-19.ott.twamb.ca", "14000", "C:\\Users\\Titu\\Downloads\\SampleData_Day1.xls");
+MllpCommandSender sender = driver.getNewSender("as-19.ott.twamb.ca", "14000", "/Users/nargis.akter/Downloads/SampleData_Day1.xls");
 
-Command transferCommand = sender.admit(4003205)
+Command transferCommand = sender.transfer("4004648", "14C", "K004", "02")
 transferCommand.execute();

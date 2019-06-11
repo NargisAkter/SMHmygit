@@ -12,16 +12,30 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import ca.thoughtwire.acceptance.mllp.api.Command;
-import ca.thoughtwire.acceptance.mllp.api.MllpCommandSender;
-import ca.thoughtwire.acceptance.mllp.api.MllpDriver;
-import ca.thoughtwire.acceptance.mllp.impl.MllpDriverImpl;
-MllpDriver driver =new MllpDriverImpl();
-MllpCommandSender sender = driver.getNewSender("cs1-19.ott.twamb.ca", "14000", "C:\\Users\\Titu\\Downloads\\SampleData_Day1.xls");
+import ca.thoughtwire.acceptance.mllp.api.Command as Command
+import ca.thoughtwire.acceptance.mllp.api.MllpCommandSender as MllpCommandSender
+import ca.thoughtwire.acceptance.mllp.api.MllpDriver as MllpDriver
+import ca.thoughtwire.acceptance.mllp.impl.MllpDataConstants as MllpDataConstants
+import ca.thoughtwire.acceptance.mllp.impl.MllpDriverImpl as MllpDriverImpl
 
-def mrnlist=["4003205","4002259"]
-for(def mrn:mrnlist)
-{
-Command admitCommand = sender.admit(mrn)
-admitCommand.execute();
-}
+MllpDriver driver = new MllpDriverImpl()
+
+MllpCommandSender sender = driver.getNewSender('as-19.ott.twamb.ca', '14000', '/Users/nargis.akter/Downloads/SampleData_Day1.xls')
+
+/*def mrnlist = ['4003205', '4002259']
+
+for (def mrn : mrnlist) {
+    Command admitCommand = sender.admit(mrn)
+
+    admitCommand.getField(MllpDataConstants.MRN)
+
+    admitCommand.getField(MllpDataConstants.PATIENT_DOB)
+    String service = admitCommand.getField(MllpDataConstants.VISIT_HOSPITAL_SERVICE)
+
+    admitCommand.execute()
+}*/
+
+
+Command admitCommand = sender.admit("4004648")
+admitCommand.execute()
+WebUI.delay(60)

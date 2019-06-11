@@ -12,6 +12,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import ca.thoughtwire.acceptance.mllp.api.Command;
+import ca.thoughtwire.acceptance.mllp.api.MllpCommandSender;
+import ca.thoughtwire.acceptance.mllp.api.MllpDriver;
+import ca.thoughtwire.acceptance.mllp.impl.MllpDataConstants
+import ca.thoughtwire.acceptance.mllp.impl.MllpDriverImpl;
+
+MllpDriver driver =new MllpDriverImpl();
+MllpCommandSender sender = driver.getNewSender("cs1-19.ott.twamb.ca", "14000", "/Users/nargis.akter/Downloads/SampleData_Day1.xls");
+
+
+Command admitCommand = sender.admit("4003205")
+admitCommand.getField(MllpDataConstants.MRN);
+admitCommand.getField(MllpDataConstants.PATIENT_DOB);
+admitCommand.execute();
+
 for(def rowNum=3;rowNum<=4;rowNum++)
 {
    //String room=findTestData("SampleData_eWBD").getValue("Room", rowNum)
