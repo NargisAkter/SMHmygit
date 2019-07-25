@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Password_twLogin_button</name>
+   <name>Done_Button_Full_Screen</name>
    <tag></tag>
-   <elementGuidId>8fa5c66a-e343-460c-b69b-815f4cb05764</elementGuidId>
+   <elementGuidId>98b6113c-4a9a-4c0a-82f9-b74809cc345e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='submitButton']</value>
+         <value>//button[@value='Done']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

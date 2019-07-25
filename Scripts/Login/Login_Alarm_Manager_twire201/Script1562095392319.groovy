@@ -13,11 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 WebUI.openBrowser('')
 
-//WebUI.navigateToUrl('https://as-19.ott.twamb.ca/agent-server/launch?uri=http://thoughtwire.ca/ont/sln/ewb/smh&unit=14C')
-
 WebUI.navigateToUrl('https://as-19.ott.twamb.ca/agent-server/launch?uri=http://thoughtwire.ca/ont/sln/nm/smh')
+
 WebUI.setText(findTestObject('Object Repository/LoginPage/input_User name_username'),
 	'bsnow')
 
@@ -25,29 +25,15 @@ WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage/input_Passwor
 	'WfhbnYCDenevwEefKBoKjA==')
 
 WebUI.click(findTestObject('Object Repository/LoginPage/input_Password_twLogin_button'))
-WebUI.delay(20)
+WebUI.delay(15)
 WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Team_Assignment_Link'))
 WebUI.delay(5)
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alarm Manager/Home_Tab/cb_select_Role'),
-	'http://medical.thoughtwire.ca/seniorMedicalResident', true)
-WebUI.delay(2)
+WebUI.selectOptionByIndex(findTestObject('Alarm Manager/Home_Tab/cb_select_Role'),1)
+WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Assign_Button'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Team_Assignment_Link'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Cancel_button'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Code_Event_Subscriptions_Link'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/cb_subscription_check'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/save_btn_for_subscription'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Code_Event_Subscriptions_Link'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/cb_subscription_check'))
-WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/cancel_btn_for_subscription'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Alarm Manager/Home_Tab/Logout_btn'))
-
+WebUI.delay(3)
+WebUI.click(findTestObject('Alarm Manager/Code_Notifications/Accept_Button_Full_Screen'))
+WebUI.delay(3)
+WebUI.click(findTestObject('Alarm Manager/Code_Notifications/Declin_Button_Full_Screen'))
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Alarm Manager/Code_Notifications/Done_Button_Full_Screen'))

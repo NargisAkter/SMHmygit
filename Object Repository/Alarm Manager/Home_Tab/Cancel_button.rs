@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Password_twLogin_button</name>
+   <name>Cancel_button</name>
    <tag></tag>
-   <elementGuidId>8fa5c66a-e343-460c-b69b-815f4cb05764</elementGuidId>
+   <elementGuidId>66aa8e03-2ebb-41f4-972f-df84155d6ddd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='submitButton']</value>
+         <value>//div[@class='teamassignform']//button[@title='Cancel']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

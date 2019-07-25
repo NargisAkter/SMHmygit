@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Password_twLogin_button</name>
+   <name>cancel_btn_for_subscription</name>
    <tag></tag>
-   <elementGuidId>8fa5c66a-e343-460c-b69b-815f4cb05764</elementGuidId>
+   <elementGuidId>4de21249-b629-44c9-ae24-97531eafb271</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='submitButton']</value>
+         <value>//div[@class='subscriptionsForm']//button[contains(@id,'cancelButton')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

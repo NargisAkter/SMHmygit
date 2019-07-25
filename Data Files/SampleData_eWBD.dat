@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>bdcb1442-f7f4-4a4d-b4bd-deb0be15c186</dataFileGUID>
-   <dataSourceUrl>C:\Users\Titu\Downloads\SampleData_Day1.xls</dataSourceUrl>
+   <dataSourceUrl>/Users/nargis.akter/git/SMHmygit/C:\Users\Titu\Downloads\SampleData_Day1.xls</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName></sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
